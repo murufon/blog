@@ -38,3 +38,31 @@ git push -u origin master
 
 setting→GitHub Pages→Sourceから`master branch /docs folder`を選択→Save
 即座に反映されるわけではないので少し待ってから`Your site is ready to be published at https://murufon.github.io/blog/`のところから飛んでみて表示されれば成功
+
+# deploy.sh
+毎回ビルドしてコミットしてプッシュして...は面倒なのでスクリプト1つ叩けばデプロイされるようにしておきます
+公式ドキュメントに書かれているスクリプトをコピペしてdocsで公開するバージョンに書き換えてあります
+https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script
+`vim deploy.sh`
+```bash
+#!/bin/bash
+
+echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
+
+# Build the project.
+hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -m "$msg"
+
+# Push source and build repos.
+git push origin master
+```
+`chmod +x deploy.sh`で実行権を与えてあげるのを忘れずに
