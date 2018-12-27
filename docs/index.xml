@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>murufon&#39;s blog</title>
-    <link>https://murufon.github.io/blog/</link>
+    <link>https://murufon.github.io/</link>
     <description>Recent content on murufon&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 27 Dec 2018 00:20:37 +0900</lastBuildDate>
     
-	<atom:link href="https://murufon.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://murufon.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugoのデプロイ</title>
-      <link>https://murufon.github.io/blog/post/hugo-deploy/</link>
+      <link>https://murufon.github.io/post/hugo-deploy/</link>
       <pubDate>Thu, 27 Dec 2018 00:20:37 +0900</pubDate>
       
-      <guid>https://murufon.github.io/blog/post/hugo-deploy/</guid>
+      <guid>https://murufon.github.io/post/hugo-deploy/</guid>
       <description>GitHub Pagesを使って作ったサイトを公開してみたいと思います User/Organization PagesではなくProject Pagesとしてデプロイします Hugo公式がわか</description>
     </item>
     
     <item>
       <title>Hugoのカスタマイズ</title>
-      <link>https://murufon.github.io/blog/post/hugo-customize/</link>
+      <link>https://murufon.github.io/post/hugo-customize/</link>
       <pubDate>Wed, 26 Dec 2018 23:43:53 +0900</pubDate>
       
-      <guid>https://murufon.github.io/blog/post/hugo-customize/</guid>
+      <guid>https://murufon.github.io/post/hugo-customize/</guid>
       <description>自分が設定した項目のメモ 各種設定 基本的な設定はconfig.tomlを書き換えることで設定できるようになっている テーマごとに設定項目に異なる</description>
     </item>
     
     <item>
       <title>Hugoのインストール</title>
-      <link>https://murufon.github.io/blog/post/hugo-install/</link>
+      <link>https://murufon.github.io/post/hugo-install/</link>
       <pubDate>Wed, 26 Dec 2018 21:49:19 +0900</pubDate>
       
-      <guid>https://murufon.github.io/blog/post/hugo-install/</guid>
+      <guid>https://murufon.github.io/post/hugo-install/</guid>
       <description>hugoとは https://gohugo.io/ 静的なサイトをつくるフレームワークで、Go言語で書かれている Markdownで各ページを書いてそれをHTMLに変換(ビルド)し</description>
     </item>
     

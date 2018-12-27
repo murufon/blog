@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://murufon.github.io/blog/sitemap.xml
+Sitemap: https://murufon.github.io/sitemap.xml
