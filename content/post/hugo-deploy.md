@@ -75,6 +75,17 @@ git push origin master
 実際にデプロイしてみて`https://<USERNAME>.github.io/`にアクセスしてみて正しく表示されれば成功
 pushしてから反映まで少し時間がかかる場合があるので注意
 
+# 独自ドメインの設定
+## DNS設定をする
+サービスによって設定方法は違うので各マニュアルを参照
+`blog.kaio.ga CNAME murufon.github.io`
+
+## GitHub側の設定
+`static/`に`CNAME`という名前のテキストファイルを作成する(拡張子なし)。中身は設定したいカスタムドメインのみ
+hugoでビルドすると公開サイトのリポジトリのルートにCNAMEが置かれる
+github pagesはルートのCNAMEを見て独自ドメインの設定を判断しているらしい
+これをpushしてしばらくすると`murufon.github.io`リポジトリのSettings→GitHub Pages→Enforce HTTPSが設定可能になるので設定しておく
+
 # 記事作成のスクリプト化
 どうせなら新規記事作成もスクリプトにまとめます
 以下のファイルを`new.sh`として作成し、`chmod +x new.sh`
