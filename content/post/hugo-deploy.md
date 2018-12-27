@@ -1,7 +1,7 @@
 ---
-title: "Hugonのデプロイ"
+title: "Hugoのデプロイ"
 date: 2018-12-27T00:20:37+09:00
-draft: true
+draft: false
 tags: ["hugo"]
 categories: ["hugo"]
 ---
@@ -25,3 +25,15 @@ publishDir = "docs"
 rm -rf public
 ```
 
+# githubにpushしてみる
+
+```bash
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/murufon/blog.git
+git push -u origin master
+```
+
+setting→GitHub Pages→Sourceからmaster branch /docs folderを選択→Save
+しばらく待ってから`Your site is ready to be published at https://murufon.github.io/blog/`のところより飛んでみて表示されれば成功
