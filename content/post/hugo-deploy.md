@@ -28,6 +28,11 @@ https://gohugo.io/hosting-and-deployment/hosting-on-github/
 最後のコマンドについて
 `hugo`コマンドでサイトをビルドすると`public`にファイルが生成されます。そこで`public`フォルダだけ別のリポジトリにすることで分けて管理することができます(サブモジュール)。
 
+あとは`config.toml`の`baseURL`を書き換えてあげればいい感じ
+```toml
+baseURL = "https://murufon.github.io/"
+```
+
 # デプロイのスクリプト化
 基本は公式ドキュメントにあるスクリプトのままです
 `hugo-blog`をcommit/pushするコードを加えました
@@ -63,9 +68,9 @@ git push origin master
 ```
 `chmod +x deploy.sh`で実行権を与えてあげるのを忘れずに
 
-GitHubのリポジトリのページ行き、setting→GitHub Pages→Sourceから`master branch /docs folder`を選択→Save
-即座に反映されるわけではないので少し待ってから`Your site is ready to be published at https://murufon.github.io/blog/`のところから飛んでみて表示されれば成功
-
+リポジトリ名を`<USERNAME>.github.io`にすると特に設定しなくても自動的にgithub pagesに公開されるっぽい？(要確認)
+実際にデプロイしてみて`https://<USERNAME>.github.io/`にアクセスしてみて正しく表示されれば成功
+pushしてから反映まで少し時間がかかる場合があるので注意
 
 # 記事作成のスクリプト化
 どうせなら新規記事作成もスクリプトにまとめます
