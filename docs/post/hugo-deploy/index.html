@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="murufon" /><meta name="description" content="GitHub Pagesを使って作ったサイトを公開してみたいと思います User/Organization PagesではなくProject Pagesとしてデプロイします Hugo公式がわか" /><meta name="keywords" content="murufon, programming, blog" />
+<meta name="author" content="murufon" /><meta name="description" content="GitHub Pagesを使って作ったサイトを公開してみたいと思います リポジトリ名や公開するフォルダによっていくつかやり方がありますが、独自ドメインにす" /><meta name="keywords" content="murufon, programming, blog" />
 
 
 
@@ -39,25 +39,25 @@
 
 
 <meta property="og:title" content="Hugoのデプロイ" />
-<meta property="og:description" content="GitHub Pagesを使って作ったサイトを公開してみたいと思います User/Organization PagesではなくProject Pagesとしてデプロイします Hugo公式がわか" />
+<meta property="og:description" content="GitHub Pagesを使って作ったサイトを公開してみたいと思います リポジトリ名や公開するフォルダによっていくつかやり方がありますが、独自ドメインにす" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://murufon.github.io/post/hugo-deploy/" /><meta property="article:published_time" content="2018-12-27T00:20:37&#43;09:00"/>
 <meta property="article:modified_time" content="2018-12-27T00:20:37&#43;09:00"/>
 
 <meta itemprop="name" content="Hugoのデプロイ">
-<meta itemprop="description" content="GitHub Pagesを使って作ったサイトを公開してみたいと思います User/Organization PagesではなくProject Pagesとしてデプロイします Hugo公式がわか">
+<meta itemprop="description" content="GitHub Pagesを使って作ったサイトを公開してみたいと思います リポジトリ名や公開するフォルダによっていくつかやり方がありますが、独自ドメインにす">
 
 
 <meta itemprop="datePublished" content="2018-12-27T00:20:37&#43;09:00" />
 <meta itemprop="dateModified" content="2018-12-27T00:20:37&#43;09:00" />
-<meta itemprop="wordCount" content="918">
+<meta itemprop="wordCount" content="1203">
 
 
 
 <meta itemprop="keywords" content="hugo," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hugoのデプロイ"/>
-<meta name="twitter:description" content="GitHub Pagesを使って作ったサイトを公開してみたいと思います User/Organization PagesではなくProject Pagesとしてデプロイします Hugo公式がわか"/>
+<meta name="twitter:description" content="GitHub Pagesを使って作ったサイトを公開してみたいと思います リポジトリ名や公開するフォルダによっていくつかやり方がありますが、独自ドメインにす"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -136,6 +136,7 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
+<li><a href="#github-pagesに公開する">GitHub Pagesに公開する</a></li>
 <li><a href="#公開するディレクトリの変更">公開するディレクトリの変更</a></li>
 <li><a href="#githubにpushしてみる">githubにpushしてみる</a></li>
 <li><a href="#デプロイのスクリプト化">デプロイのスクリプト化</a></li>
@@ -147,10 +148,24 @@
     <div class="post-content">
       
 
-<p>GitHub Pagesを使って作ったサイトを公開してみたいと思います<br />
-User/Organization PagesではなくProject Pagesとしてデプロイします<br />
-Hugo公式がわかりやすくやり方を書いてくれているのでそれに沿ってやってみます<br />
-<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a></p>
+<p>GitHub Pagesを使って作ったサイトを公開してみたいと思います</p>
+
+<p>リポジトリ名や公開するフォルダによっていくつかやり方がありますが、独自ドメインにする際に都合がいいので今回はUser Pagesとしてデプロイしてみます<br />
+User Pagesは<code>https://&lt;USERNAME&gt;.github.io</code>というURLでアクセスできるようにするやり方で、ドメインと同名のリポジトリを作成する必要があります</p>
+
+<p>Hugo公式がわかりやすくやり方を書いてくれているのでそれに沿ってやってみます<br />
+<a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/">https://gohugo.io/hosting-and-deployment/hosting-on-github/</a><br />
+リポジトリ名などは適宜読み替えてください</p>
+
+<h1 id="github-pagesに公開する">GitHub Pagesに公開する</h1>
+
+<ul>
+<li>hugoのプロジェクト用のリポジトリを作成します。ここでは<code>hugo-blog</code>としました。このファイルは<br /></li>
+<li><code>&lt;USERNAME&gt;.github.io</code>という名前でリポジトリを作る。自分の場合<code>murufon.github.io</code>です<br /></li>
+<li><code>git clone  &amp;&amp; cd &lt;YOUR-PROJECT&gt;</code><br /></li>
+<li><br />
+<br /></li>
+</ul>
 
 <h1 id="公開するディレクトリの変更">公開するディレクトリの変更</h1>
 

@@ -7,9 +7,19 @@ categories: ["hugo"]
 ---
 
 GitHub Pagesを使って作ったサイトを公開してみたいと思います
-User/Organization PagesではなくProject Pagesとしてデプロイします
+
+リポジトリ名や公開するフォルダによっていくつかやり方がありますが、独自ドメインにする際に都合がいいので今回はUser Pagesとしてデプロイしてみます
+User Pagesは`https://<USERNAME>.github.io`というURLでアクセスできるようにするやり方で、ドメインと同名のリポジトリを作成する必要があります
+
 Hugo公式がわかりやすくやり方を書いてくれているのでそれに沿ってやってみます
 https://gohugo.io/hosting-and-deployment/hosting-on-github/
+リポジトリ名などは適宜読み替えてください
+
+# GitHub Pagesに公開する
+- hugoのプロジェクト用のリポジトリを作成します。ここでは`hugo-blog`としました。このファイルは
+- `<USERNAME>.github.io`という名前でリポジトリを作る。自分の場合`murufon.github.io`です
+- `git clone  && cd <YOUR-PROJECT>`
+- 
 
 # 公開するディレクトリの変更
 github pagesではmasterブランチの/docsディレクトリを公開する方法とgh-pagesというブランチを公開する方法があります。今回は前者でやります

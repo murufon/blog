@@ -1,5 +1,6 @@
 # baseURL = "http://localhost:1313/"
 baseURL = "https://murufon.github.io/"
+publishDir = "docs"
 languageCode = "en"
 defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "murufon's blog"
@@ -20,7 +21,6 @@ disqusShortname = ""      # disqus_shortname
 googleAnalytics = "UA-131272203-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
-publishDir = "docs"
 
 [author]                  # essential                     # 必需
   name = "murufon"
