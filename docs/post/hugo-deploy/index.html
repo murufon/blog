@@ -50,7 +50,7 @@
 
 <meta itemprop="datePublished" content="2018-12-27T00:20:37&#43;09:00" />
 <meta itemprop="dateModified" content="2018-12-27T00:20:37&#43;09:00" />
-<meta itemprop="wordCount" content="804">
+<meta itemprop="wordCount" content="918">
 
 
 
@@ -139,6 +139,7 @@
 <li><a href="#公開するディレクトリの変更">公開するディレクトリの変更</a></li>
 <li><a href="#githubにpushしてみる">githubにpushしてみる</a></li>
 <li><a href="#デプロイのスクリプト化">デプロイのスクリプト化</a></li>
+<li><a href="#記事作成のスクリプト化">記事作成のスクリプト化</a></li>
 </ul>
 </nav>
   </div>
@@ -250,6 +251,42 @@ git push origin master</code></pre></td></tr></table>
 </div>
 <p><code>chmod +x deploy.sh</code>で実行権を与えてあげるのを忘れずに</p>
 
+<h1 id="記事作成のスクリプト化">記事作成のスクリプト化</h1>
+
+<p>どうせなら記事作成もスクリプトにまとめてしまう<br />
+以下のファイルを<code>new.sh</code>として作成し、<code>chmod +x new.sh</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">1</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+  <span class="c1"># $ ./new.sh atricleName</span>
+  <span class="nv">articlename</span><span class="o">=</span><span class="nv">$1</span>
+<span class="k">else</span>
+  <span class="c1"># $ ./new.sh</span>
+  <span class="nb">read</span> -p <span class="s1">&#39;Please input article name: &#39;</span> articlename
+<span class="k">fi</span>
+hugo new post/<span class="nv">$articlename</span>.md
+
+<span class="c1"># open this project wiht Atom</span>
+atom ./<span class="p">;</span> atom ./content/post/<span class="nv">$articlename</span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
