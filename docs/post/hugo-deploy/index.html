@@ -50,7 +50,7 @@
 
 <meta itemprop="datePublished" content="2018-12-27T00:20:37&#43;09:00" />
 <meta itemprop="dateModified" content="2018-12-27T00:20:37&#43;09:00" />
-<meta itemprop="wordCount" content="782">
+<meta itemprop="wordCount" content="804">
 
 
 
@@ -138,7 +138,7 @@
 <ul>
 <li><a href="#公開するディレクトリの変更">公開するディレクトリの変更</a></li>
 <li><a href="#githubにpushしてみる">githubにpushしてみる</a></li>
-<li><a href="#deploy-sh">deploy.sh</a></li>
+<li><a href="#デプロイのスクリプト化">デプロイのスクリプト化</a></li>
 </ul>
 </nav>
   </div>
@@ -195,13 +195,13 @@ git remote add origin https://github.com/murufon/blog.git
 git push -u origin master</code></pre></td></tr></table>
 </div>
 </div>
-<p>setting→GitHub Pages→Sourceから<code>master branch /docs folder</code>を選択→Save<br />
+<p>GitHubのリポジトリのページ行き、setting→GitHub Pages→Sourceから<code>master branch /docs folder</code>を選択→Save<br />
 即座に反映されるわけではないので少し待ってから<code>Your site is ready to be published at https://murufon.github.io/blog/</code>のところから飛んでみて表示されれば成功</p>
 
-<h1 id="deploy-sh">deploy.sh</h1>
+<h1 id="デプロイのスクリプト化">デプロイのスクリプト化</h1>
 
 <p>毎回ビルドしてコミットしてプッシュして&hellip;は面倒なのでスクリプト1つ叩けばデプロイされるようにしておきます<br />
-公式ドキュメントに書かれているスクリプトをコピペしてdocsで公開するバージョンに書き換えてあります<br />
+公式ドキュメントに書かれているスクリプトをコピペしてdocsで公開する用に少し書き換え<br />
 <a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script">https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script</a><br />
 <code>vim deploy.sh</code></p>
 <div class="highlight"><div class="chroma">

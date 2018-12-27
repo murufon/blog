@@ -36,12 +36,12 @@ git remote add origin https://github.com/murufon/blog.git
 git push -u origin master
 ```
 
-setting→GitHub Pages→Sourceから`master branch /docs folder`を選択→Save
+GitHubのリポジトリのページ行き、setting→GitHub Pages→Sourceから`master branch /docs folder`を選択→Save
 即座に反映されるわけではないので少し待ってから`Your site is ready to be published at https://murufon.github.io/blog/`のところから飛んでみて表示されれば成功
 
-# deploy.sh
+# デプロイのスクリプト化
 毎回ビルドしてコミットしてプッシュして...は面倒なのでスクリプト1つ叩けばデプロイされるようにしておきます
-公式ドキュメントに書かれているスクリプトをコピペしてdocsで公開するバージョンに書き換えてあります
+公式ドキュメントに書かれているスクリプトをコピペしてdocsで公開する用に少し書き換え
 https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script
 `vim deploy.sh`
 ```bash
