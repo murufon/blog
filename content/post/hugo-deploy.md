@@ -104,5 +104,7 @@ hugo new post/$articlename.md
 # open this project wiht Atom
 atom ./ && atom ./content/post/$articlename
 ```
-`./new.sh <ARTICLE NAME>`と叩くと新しくファイルを作ってAtomで開いてくれます
+`./new.sh <ARTICLE NAME>`と叩くと新しくファイルを作ってくれます
+`./new.sh`と叩くと記事名を聞いてファイル作ってくれます
+ファイル作った後Atomで開いてくれます
 `atom`コマンドをインストールしていない場合はMacの場合はAtomのメニューのAtom→Install Shell Commandsからインストール
