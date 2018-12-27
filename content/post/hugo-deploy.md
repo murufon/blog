@@ -28,7 +28,7 @@ https://gohugo.io/hosting-and-deployment/hosting-on-github/
 最後のコマンドについて
 `hugo`コマンドでサイトをビルドすると`public`にファイルが生成されます。そこで`public`フォルダだけ別のリポジトリにすることで分けて管理することができます(サブモジュール)。
 
-あとは`config.toml`の`baseURL`を書き換えてあげればいい感じ
+あとは`config.toml`の`baseURL`を書き換えてあげればいい感じ(この公開方法だと`/`がトップだから変えなくても一応動きそう？)
 ```toml
 baseURL = "https://murufon.github.io/"
 ```
@@ -36,6 +36,7 @@ baseURL = "https://murufon.github.io/"
 # デプロイのスクリプト化
 基本は公式ドキュメントにあるスクリプトのままです
 `hugo-blog`をcommit/pushするコードを加えました
+以下を`deploy.sh`として作成
 ```bash
 #!/bin/bash
 
@@ -63,10 +64,12 @@ git push origin master
 cd ..
 
 # Commit hugo project
+git add .
 git commit -m "$msg"
 git push origin master
 ```
 `chmod +x deploy.sh`で実行権を与えてあげるのを忘れずに
+これで`./deploy`でデプロイしてくれるようになる
 
 リポジトリ名を`<USERNAME>.github.io`にすると特に設定しなくても自動的にgithub pagesに公開されるっぽい？(要確認)
 実際にデプロイしてみて`https://<USERNAME>.github.io/`にアクセスしてみて正しく表示されれば成功
@@ -91,4 +94,4 @@ hugo new post/$articlename.md
 atom ./ && atom ./content/post/$articlename
 ```
 `./new.sh <ARTICLE NAME>`と叩くと新しくファイルを作ってAtomで開いてくれます
-`atom`コマンドをインストールしていない場合はAtomのメニューのAtom→Install Shell Commands
+`atom`コマンドをインストールしていない場合はMacの場合はAtomのメニューのAtom→Install Shell Commandsからインストール
