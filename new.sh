@@ -10,4 +10,4 @@ fi
 hugo new post/$articlename.md
 
 # open this project wiht Atom
-atom ./; atom ./content/post/$articlename.md
+atom ./ && atom ./content/post/$articlename.md

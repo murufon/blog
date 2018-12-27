@@ -16,44 +16,21 @@ https://gohugo.io/hosting-and-deployment/hosting-on-github/
 リポジトリ名などは適宜読み替えてください
 
 # GitHub Pagesに公開する
-- hugoのプロジェクト用のリポジトリを作成します。ここでは`hugo-blog`としました。このファイルは
+- hugoのプロジェクト用のリポジトリを作成します。ここでは`hugo-blog`としました。このhugoのファイル一式をこのリポジトリにいれておきます
 - `<USERNAME>.github.io`という名前でリポジトリを作る。自分の場合`murufon.github.io`です
-- `git clone  && cd <YOUR-PROJECT>`
-- 
+- `git clone https://github.com/murufon/hugo-blog.git && cd hugo-blog`
+- `hugo server`でサーバーを立ち上げ、`http://localhost:1313`で動作を確認します
+- ちゃんと動作していたら
+  - Ctrl+Cで止めて
+  - `rm -rf public`で一旦`public`ディレクトリを削除します
+- `git submodule add -b master https://github.com/murufon/murufon.github.io.git public`
 
-# 公開するディレクトリの変更
-github pagesではmasterブランチの/docsディレクトリを公開する方法とgh-pagesというブランチを公開する方法があります。今回は前者でやります
-
-`config.toml`に追記する
-```toml
-publishDir = "docs"
-```
-`hugo`コマンドでビルドしてみて`/docs`ディレクトリに生成されるかテスト
-
-今まで使っていたpublicディレクトリを削除します
-```bash
-rm -rf public
-```
-
-# githubにpushしてみる
-`https://murufon.github.io/blog/`は適宜読み替えてください
-`config.toml`の`baseURL`を`"https://murufon.github.io/blog/"`に書き換える
-```bash
-git init
-git add .
-git commit -m "first commit"
-git remote add origin https://github.com/murufon/blog.git
-git push -u origin master
-```
-
-GitHubのリポジトリのページ行き、setting→GitHub Pages→Sourceから`master branch /docs folder`を選択→Save
-即座に反映されるわけではないので少し待ってから`Your site is ready to be published at https://murufon.github.io/blog/`のところから飛んでみて表示されれば成功
+最後のコマンドについて
+`hugo`コマンドでサイトをビルドすると`public`にファイルが生成されます。そこで`public`フォルダだけ別のリポジトリにすることで分けて管理することができます(サブモジュール)。
 
 # デプロイのスクリプト化
-毎回ビルドしてコミットしてプッシュして...は面倒なのでスクリプト1つ叩けばデプロイされるようにしておきます
-公式ドキュメントに書かれているスクリプトをコピペしてdocsで公開する用に少し書き換え
-https://gohugo.io/hosting-and-deployment/hosting-on-github/#put-it-into-a-script
-`vim deploy.sh`
+基本は公式ドキュメントにあるスクリプトのままです
+`hugo-blog`をcommit/pushするコードを加えました
 ```bash
 #!/bin/bash
 
@@ -62,6 +39,8 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # Build the project.
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
+# Go To Public folder
+cd public
 # Add changes to git.
 git add .
 
@@ -74,11 +53,22 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
+
+# Come Back up to the Project Root
+cd ..
+
+# Commit hugo project
+git commit -m "$msg"
+git push origin master
 ```
 `chmod +x deploy.sh`で実行権を与えてあげるのを忘れずに
 
+GitHubのリポジトリのページ行き、setting→GitHub Pages→Sourceから`master branch /docs folder`を選択→Save
+即座に反映されるわけではないので少し待ってから`Your site is ready to be published at https://murufon.github.io/blog/`のところから飛んでみて表示されれば成功
+
+
 # 記事作成のスクリプト化
-どうせなら記事作成もスクリプトにまとめてしまう
+どうせなら新規記事作成もスクリプトにまとめます
 以下のファイルを`new.sh`として作成し、`chmod +x new.sh`
 ```bash
 #!/bin/bash
@@ -93,5 +83,7 @@ fi
 hugo new post/$articlename.md
 
 # open this project wiht Atom
-atom ./; atom ./content/post/$articlename
+atom ./ && atom ./content/post/$articlename
 ```
+`./new.sh <ARTICLE NAME>`と叩くと新しくファイルを作ってAtomで開いてくれます
+`atom`コマンドをインストールしていない場合はAtomのメニューのAtom→Install Shell Commands

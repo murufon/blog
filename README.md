@@ -19,7 +19,7 @@ Please input article name:
 ```
 
 ## デプロイ
-ビルド→コミット→プッシュ
+github pagesへのデプロイとhugoプロジェクト全体のコミット
 ```bash
 $ ./deploy.sh
 ```
