@@ -26,7 +26,8 @@ rm -rf public
 ```
 
 # githubにpushしてみる
-
+`https://murufon.github.io/blog/`は適宜読み替えてください
+`config.toml`の`baseURL`を`"https://murufon.github.io/blog/"`に書き換える
 ```bash
 git init
 git add .
@@ -35,5 +36,5 @@ git remote add origin https://github.com/murufon/blog.git
 git push -u origin master
 ```
 
-setting→GitHub Pages→Sourceからmaster branch /docs folderを選択→Save
-しばらく待ってから`Your site is ready to be published at https://murufon.github.io/blog/`のところより飛んでみて表示されれば成功
+setting→GitHub Pages→Sourceから`master branch /docs folder`を選択→Save
+即座に反映されるわけではないので少し待ってから`Your site is ready to be published at https://murufon.github.io/blog/`のところから飛んでみて表示されれば成功
