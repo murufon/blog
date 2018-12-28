@@ -10,6 +10,8 @@ enableRobotsTXT = true
 enableEmoji = true
 theme = "even"
 
+enableGitInfo = true # enable get lastMod from git info
+
 # Syntax highlighting by Chroma. NOTE: Don't enable `highlightInClient` and `chroma` at the same time!
 pygmentsOptions = "linenos=table"
 pygmentsCodefences = true
