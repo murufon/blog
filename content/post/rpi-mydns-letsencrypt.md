@@ -26,7 +26,7 @@ git clone https://github.com/certbot/certbot.git ~/certbot
 ```
 READMEにしたがってMyDNSのアカウントの設定等をファイルに書き込む
 
-READMEのコマンドの該当箇所を変更したら僕の環境では以下のようになった
+READMEのコマンドの該当箇所を変更したら自分の環境では以下のようになった
 ```bash
 sudo ~/certbot/certbot-auto certonly --manual \
 --preferred-challenges=dns \
@@ -51,7 +51,7 @@ IMPORTANT NOTES:
    "certbot-auto renew"
  ```
  
- ## 証明書を自動更新するための設定
+## 証明書を自動更新するための設定
  `certbot_renew.sh`を作成
 ```bash
 $ vi certbot_renew.sh
