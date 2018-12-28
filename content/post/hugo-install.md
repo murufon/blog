@@ -2,8 +2,8 @@
 title: "Hugoのインストール"
 date: 2018-12-26T21:49:19+09:00
 draft: false
-tags: ["hugo"]
-categories: ["hugo"]
+tags: ["Hugo"]
+categories: ["Hugo"]
 ---
 
 

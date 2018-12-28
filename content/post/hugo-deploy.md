@@ -2,8 +2,8 @@
 title: "Hugoのデプロイ"
 date: 2018-12-27T00:20:37+09:00
 draft: false
-tags: ["hugo"]
-categories: ["hugo"]
+tags: ["Hugo"]
+categories: ["Hugo"]
 ---
 
 GitHub Pagesを使って作ったサイトを公開してみたいと思います

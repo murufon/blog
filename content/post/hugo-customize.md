@@ -2,8 +2,8 @@
 title: "Hugoのカスタマイズ"
 date: 2018-12-26T23:43:53+09:00
 draft: false
-tags: ["hugo"]
-categories: ["hugo"]
+tags: ["Hugo"]
+categories: ["Hugo"]
 ---
 
 自分が設定した項目のメモ
