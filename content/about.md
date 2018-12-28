@@ -32,3 +32,4 @@ Hugoという静的サイトジェネレーターを使っています。Go言�
 テーマは一目惚れしてEvenを使っています
 GitHub Pagesにデプロイしています
 このサイトのコードは https://github.com/murufon/hugo-blog にあります
+このサイト自体は https://github.com/murufon/murufon.github.io にデプロイされています
