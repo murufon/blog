@@ -1,7 +1,6 @@
 ---
 title: "プロキシサーバー"
-date: 2018-12-28T17:22:12+09:00
-lastmod: 2018-12-28T17:22:12+09:00
+date: 2018-12-28T17:49:25+09:00
 draft: false
 tags: ["proxy","自宅server","Raspberry Pi"]
 categories: ["Raspberry Pi"]

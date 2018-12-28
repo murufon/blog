@@ -1,7 +1,6 @@
 ---
 title: "RaspberryPiにMailuをセットアップする"
-date: 2018-12-28T17:38:37+09:00
-lastmod: 2018-12-28T17:38:37+09:00
+date: 2018-12-28T17:49:23+09:00
 draft: true
 tags: ["Raspberry Pi","mailu","自宅server"]
 categories: ["Raspberry Pi"]

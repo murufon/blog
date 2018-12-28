@@ -1,7 +1,6 @@
 ---
 title: "Raspberry PiからMyDNSを使う"
 date: 2018-12-28T17:40:16+09:00
-lastmod: 2018-12-28T17:40:16+09:00
 draft: false
 tags: ["Raspberry Pi","mydns","自宅server"]
 categories: ["Raspberry Pi"]

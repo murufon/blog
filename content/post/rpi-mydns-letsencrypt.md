@@ -1,7 +1,6 @@
 ---
 title: "MyDNSで設定したドメインでLet's Encryptの証明書を取得する"
 date: 2018-12-28T17:43:39+09:00
-lastmod: 2018-12-28T17:43:39+09:00
 draft: false
 tags: ["Raspberry Pi","自宅server","letsencrypt","mydns"]
 categories: ["Raspberry Pi"]
