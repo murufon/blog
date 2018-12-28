@@ -1,7 +1,7 @@
 # murufon's blog
 
 むるふぉんのブログ by hugo
-https://murufon.github.io/
+https://blog.kaio.ga
 
 # command
 
