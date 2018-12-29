@@ -6,6 +6,12 @@ tags: ["Raspberry Pi","自宅server","letsencrypt","mydns"]
 categories: ["Raspberry Pi"]
 ---
 
+
+## Nginx のインストール
+```bash
+sudo apt-get install nginx
+```
+
 ## Nginx で PHP を使う設定
 これやらないとMyDNSのリポジトリでの証明書取得はできなさそう
 
@@ -17,15 +23,34 @@ https://qiita.com/Brutus/items/27525deedb0eea1b35b8
 
 ## 証明書の取得
 
-MyDNS公式リポジトリ( https://github.com/disco-v8/DirectEdit/ )のREADMEを参照
-
 ワイルドカードの証明書を取得するにはcertbotの0.22以上が必要らしいが、現時点では`apt-get install`でバージョン0.10.2までしかはいらなかったのでGitから取ってくる
 
 ```bash
 git clone https://github.com/certbot/certbot.git ~/certbot
 ```
-READMEにしたがってMyDNSのアカウントの設定等をファイルに書き込む
 
+MyDNS公式リポジトリ( https://github.com/disco-v8/DirectEdit/ )のREADMEを参照
+
+STEP1:
+```bash
+cd /var/www/html/
+wget 'https://github.com/disco-v8/DirectEdit/archive/master.zip' -O DirectEdit-master.zip
+unzip ./DirectEdit-master.zip
+cd /var/www/html/DirectEdit-master/
+chmod 700 ./*.php
+chmod 600 ./*.conf
+```
+
+STEP2:
+READMEにしたがってMyDNSのアカウントの設定等をファイルに書き込む
+`txtedit.conf`を編集する
+```bash
+    $MYDNSJP_MASTERID  = 'yourmasterid';
+    $MYDNSJP_MASTERPWD = 'yourpasswd';
+    $MYDNSJP_DOMAIN = 'yourdomain';
+```
+
+STEP3:
 READMEのコマンドの該当箇所を変更したら自分の環境では以下のようになった
 ```bash
 sudo ~/certbot/certbot-auto certonly --manual \
