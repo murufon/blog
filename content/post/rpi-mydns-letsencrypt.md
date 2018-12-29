@@ -2,8 +2,8 @@
 title: "MyDNSで設定したドメインでLet's Encryptの証明書を取得する"
 date: 2018-12-28T17:43:39+09:00
 draft: false
-tags: ["Raspberry Pi","自宅server","letsencrypt","mydns"]
-categories: ["Raspberry Pi"]
+tags: ["Raspberry Pi","自宅server","letsencrypt","mydns","Nginx"]
+categories: ["Raspberry Pi",'Nginx']
 ---
 
 
@@ -32,6 +32,7 @@ git clone https://github.com/certbot/certbot.git ~/certbot
 MyDNS公式リポジトリ( https://github.com/disco-v8/DirectEdit/ )のREADMEを参照
 
 STEP1:
+環境によって`/var/www/html`のところが違うかもしれない
 ```bash
 cd /var/www/html/
 wget 'https://github.com/disco-v8/DirectEdit/archive/master.zip' -O DirectEdit-master.zip
