@@ -1,7 +1,10 @@
 ---
 title: "JS Sequence Diagrams"
-date: 2015-03-04T21:57:45+08:00
+# date: 2015-03-04T21:57:45+08:00
 draft: false
+
+hiddenFromHomePage: true
+author: "olOwOlo"
 
 sequenceDiagrams: 
   enable: true

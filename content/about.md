@@ -36,8 +36,8 @@ GitHub Pagesにデプロイしています
 このサイト自体は https://github.com/murufon/murufon.github.io にデプロイされています
 
 ### Demo Pages
-- [Theme preview](/demo/even-preview/)
-- [Shortcodes](/demo/shortcodes/)
-- [Syntax Highlighting](/demo/syntax-highlighting/)
-- [JS Flowchart Diagrams](/demo/js-flowchart-diagrams/)
-- [JS Sequence Diagrams](/demo/js-sequence-diagrams/)
+- [Theme preview](/post/demo/even-preview/)
+- [Shortcodes](/post/demo/shortcodes/)
+- [Syntax Highlighting](/post/demo/syntax-highlighting/)
+- [JS Flowchart Diagrams](/post/demo/js-flowchart-diagrams/)
+- [JS Sequence Diagrams](/post/demo/js-sequence-diagrams/)
