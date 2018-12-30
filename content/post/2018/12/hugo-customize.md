@@ -8,7 +8,7 @@ categories: ["Hugo"]
 
 自分が設定した項目のメモ
 
-# 各種設定
+## 各種設定
 基本的な設定は`config.toml`を書き換えることで設定できるようになっている
 テーマごとに設定項目に異なる部分があるので各テーマのREADMEやexampleを見ながら書き換える
 
@@ -20,7 +20,7 @@ https://themes.gohugo.io/hugo-theme-even/
 vim config.toml
 ```
 
-## markdownの設定
+### markdownの設定
 `config.toml`に以下を追記する
 ```toml
 [blackfriday]
@@ -28,8 +28,8 @@ vim config.toml
   extensions = ["hardLineBreak"]
 ```
 
-# テーマをいじる
-## フォントを変更
+## テーマをいじる
+### フォントを変更
 `themes/even/src/css/_variables.scss`の`$global-serif-font-family`から`STHeiti`を抜く
 `$logo-font-family`を`$global-serif-font-family`と同じものにする
 
@@ -45,7 +45,7 @@ h1とh2の見分けがつきにくかったのでh2をh3のサイズに、h3をh
   h6: 14px
 ``` -->
 
-## ビルドする
+### ビルドする
 テーマのファイルを変更したらビルドする
 ```bash
 cd ./themes/even/

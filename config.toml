@@ -209,3 +209,4 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 	# plainIDAnchors = true
   fractions = false
   extensions = ["hardLineBreak"]
+  hrefTargetBlank = true

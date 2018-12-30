@@ -5,13 +5,13 @@ draft: false
 tags: ["proxy","自宅server","Raspberry Pi"]
 categories: ["Raspberry Pi"]
 ---
-# プロキシサーバーの設定
+## プロキシサーバーの設定
 
 自宅のraspberrypiにMyDNS+Let'sEncryptでhttps対応のサーバーを立てましたが、自宅からはMyDNSで登録したドメインでraspberrypiにアクセスできずテストの際困りました。
 そこでプロキシサーバーを経由することで自宅のネットワーク内からでも外部からと同じように登録したドメインからraspberrypiにアクセスできるようにしました。
 そのときのメモ。
 
-# プロキシサーバーを探す
+## プロキシサーバーを探す
 
 フリーのプロキシサーバーを探すには以下のサイトが有名みたいです。
 CyberSyndrome - The Proxy Search Engine ( http://www.cybersyndrome.net/ )

@@ -7,7 +7,8 @@ weight: 50
 
 ---
 
-# About Me
+# About
+## About Me
 
 {{< figure src="/images/surskit.jpg" width="96" >}}
 
@@ -26,10 +27,17 @@ weight: 50
 - PHP
 - Scala
 
-# About This Blog
+## About This Blog
 
 Hugoという静的サイトジェネレーターを使っています。Go言語で書かれておりビルドが早いのが特徴です
 テーマは一目惚れしてEvenを使っています
 GitHub Pagesにデプロイしています
 このサイトのコードは https://github.com/murufon/hugo-blog にあります
 このサイト自体は https://github.com/murufon/murufon.github.io にデプロイされています
+
+### Demo Pages
+- [Theme preview](/demo/even-preview/)
+- [Shortcodes](/demo/shortcodes/)
+- [Syntax Highlighting](/demo/syntax-highlighting/)
+- [JS Flowchart Diagrams](/demo/js-flowchart-diagrams/)
+- [JS Sequence Diagrams](/demo/js-sequence-diagrams/)

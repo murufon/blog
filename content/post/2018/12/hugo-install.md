@@ -7,20 +7,20 @@ categories: ["Hugo"]
 ---
 
 
-# hugoとは
+## hugoとは
 https://gohugo.io/
 静的なサイトをつくるフレームワークで、Go言語で書かれている
 Markdownで各ページを書いてそれをHTMLに変換(ビルド)し、それを公開する
 事前にHTMLを生成するのでWordpressみたいにデータベースがいらないのでgithub pagesとかで公開できちゃう
 他の静的サイトジェネレーターと比べてビルドが圧倒的に早いらしい
 
-# テーマ
+## テーマ
 公式がテーマを一覧形式で出してくれている
 https://themes.gohugo.io/
 
 公式に採用されていない先人の自作テーマもググれば出てくると思う
 
-## 気になったテーマ
+### 気になったテーマ
 - https://themes.gohugo.io/potato-dark/
 - https://themes.gohugo.io/steam/
 - https://themes.gohugo.io/hugo-theme-minos/
@@ -31,7 +31,7 @@ https://themes.gohugo.io/
 今回はevenを選択
 
 
-# セットアップ
+## セットアップ
 https://gohugo.io/getting-started/quick-start/
 quick startを見ながらセットアップしてみる
 

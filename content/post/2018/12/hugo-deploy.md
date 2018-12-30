@@ -15,7 +15,7 @@ Hugo公式がわかりやすくやり方を書いてくれているのでそれ�
 https://gohugo.io/hosting-and-deployment/hosting-on-github/
 リポジトリ名などは適宜読み替えてください
 
-# GitHub Pagesに公開する
+## GitHub Pagesに公開する
 - hugoのプロジェクト用のリポジトリを作成します。ここでは`hugo-blog`としました。このhugoのファイル一式をこのリポジトリにいれておきます
 - `<USERNAME>.github.io`という名前でリポジトリを作る。自分の場合`murufon.github.io`です
 - `git clone https://github.com/murufon/hugo-blog.git && cd hugo-blog`
@@ -33,7 +33,7 @@ https://gohugo.io/hosting-and-deployment/hosting-on-github/
 baseURL = "https://murufon.github.io/"
 ```
 
-# デプロイのスクリプト化
+## デプロイのスクリプト化
 基本は公式ドキュメントにあるスクリプトのままです
 `hugo-blog`をcommit/pushするコードを加えました
 以下を`deploy.sh`として作成
@@ -75,18 +75,18 @@ git push origin master
 実際にデプロイしてみて`https://<USERNAME>.github.io/`にアクセスしてみて正しく表示されれば成功
 pushしてから反映まで少し時間がかかる場合があるので注意
 
-# 独自ドメインの設定
-## DNS設定をする
+## 独自ドメインの設定
+### DNS設定をする
 サービスによって設定方法は違うので各マニュアルを参照
 `blog.kaio.ga CNAME murufon.github.io`
 
-## GitHub側の設定
+### GitHub側の設定
 `static/`に`CNAME`という名前のテキストファイルを作成する(拡張子なし)。中身は設定したいカスタムドメインのみ
 hugoでビルドすると公開サイトのリポジトリのルートにCNAMEが置かれる
 github pagesはルートのCNAMEを見て独自ドメインの設定を判断しているらしい
 これをpushしてしばらくすると`murufon.github.io`リポジトリのSettings→GitHub Pages→Enforce HTTPSが設定可能になるので設定しておく
 
-# 記事作成のスクリプト化
+## 記事作成のスクリプト化
 どうせなら新規記事作成もスクリプトにまとめます
 自分はAtomエディターを使っているので作成したファイルをAtomで開くところまで自動化してみました
 以下のファイルを`new.sh`として作成し、`chmod +x new.sh`
