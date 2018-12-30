@@ -2,8 +2,8 @@
 # baseURL = "https://murufon.github.io/"
 baseURL = "https://blog.kaio.ga/"
 # publishDir = "docs"
-languageCode = "en"
-defaultContentLanguage = "en"                             # en / zh-cn / ... (This field determines which i18n file to use)
+languageCode = "ja"
+defaultContentLanguage = "ja"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "murufon's blog"
 preserveTaxonomyNames = true
 enableRobotsTXT = true

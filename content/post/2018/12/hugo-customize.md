@@ -19,13 +19,17 @@ https://themes.gohugo.io/hugo-theme-even/
 ```bash
 vim config.toml
 ```
-
-### markdownの設定
-`config.toml`に以下を追記する
+サイト名やURLなどを書き換えて、`config.toml`に以下を追記する
 ```toml
-[blackfriday]
-  fractions = false
-  extensions = ["hardLineBreak"]
+enableGitInfo = true # enable get lastMod from git info
+# (中略)
+[blackfriday] # Markdownの設定
+  fractions = false # disable converts fractions
+  extensions = ["hardLineBreak"] # newlines translate into line breaks
+  hrefTargetBlank = true # opens absolute links in a new tab
+# (中略)
+[frontmatter]
+  lastmod = ["lastmod", ":git", "date", "publishDate"] # lastmodをgitinfoより優先させる(デフォルトではlastmodを明記してもgitinfoで上書き)
 ```
 
 ## テーマをいじる
