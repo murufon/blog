@@ -24,7 +24,7 @@ vim config.toml
 enableGitInfo = true # enable get lastMod from git info
 # (中略)
 [blackfriday] # Markdownの設定
-  fractions = false # disable converts fractions
+  fractions = false # 5/12のような分数を1文字幅の文字に変換するのを無効に
   extensions = ["hardLineBreak"] # newlines translate into line breaks
   hrefTargetBlank = true # opens absolute links in a new tab
 # (中略)
