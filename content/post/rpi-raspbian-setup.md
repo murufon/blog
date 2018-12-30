@@ -30,6 +30,7 @@ sudo raspi-config
 で各種設定をしておくと良い
 
 ## SDカードでの設定
+基本的には何も設定しなくてOK
 ラズベリーパイには従来のBIOSがないため、通常はBIOSを使用して設定および設定されるさまざまなシステム構成パラメータが「config.txt」というテキストファイルに保存される。
 /boot/config.txtはARMコアが初期化される前にGPUによって読み取られる。
 /boot/config.txtの説明↓
@@ -61,6 +62,14 @@ https://www.akakagemaru.info/port/rt500ki-portfw.html
 Raspberry PiにDockerを入れる - Qiita
 https://qiita.com/hisurga/items/7aca7484ac5bfd084294
 
+ラズパイ上でdocker-composeをビルドしてもよかったのですが時間がかかるのと面倒だったのとで`pip`でインストール
+```bash
+sudo apt install python-pip
+sudo pip install docker-compose
+docker -v
+```
+
+(参考)
 Raspberry Pi用docker-composeの構築 - Qiita
 https://qiita.com/tkyonezu/items/ceaaf41924df39254058
 

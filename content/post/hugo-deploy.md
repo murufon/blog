@@ -93,6 +93,9 @@ github pagesはルートのCNAMEを見て独自ドメインの設定を判断し
 ```bash
 #!/bin/bash
 
+month=$(date "+%m")
+year=$(date "+%Y")
+
 if [ $# -eq 1 ]; then
   # $ ./new.sh atricleName
   articlename=$1
@@ -100,12 +103,13 @@ else
   # $ ./new.sh
   read -p 'Please input article name: ' articlename
 fi
-hugo new post/$articlename.md
+hugo new post/${year}/${month}/${articlename}.md
 
 # open this project wiht Atom
-atom ./ && atom ./content/post/$articlename
+atom ./ && atom ./content/post/${year}/${month}/${articlename}.md
 ```
 `./new.sh <ARTICLE NAME>`と叩くと新しくファイルを作ってくれます
 `./new.sh`と叩くと記事名を聞いてファイル作ってくれます
+URLは`/post/{year}/{month}/{articlename}/`です。例えば`/post/2018/12/helloworld/`のようになります
 ファイル作った後Atomで開いてくれます
 `atom`コマンドをインストールしていない場合はMacの場合はAtomのメニューのAtom→Install Shell Commandsからインストール
