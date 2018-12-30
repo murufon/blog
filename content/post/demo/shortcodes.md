@@ -2,8 +2,8 @@
 title: "Shortcodes"
 # date: 2016-08-30T16:01:23+08:00
 # lastmod: 2018-02-01T18:01:23+08:00
-date: 2000-01-03T00:00:00+09:00
-lastmod: 2000-01-03T00:00:00+09:00
+date: 2000-01-02T00:00:00+09:00
+lastmod: 2000-01-02T00:00:00+09:00
 draft: false
 
 hiddenFromHomePage: true
