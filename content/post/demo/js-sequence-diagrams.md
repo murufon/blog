@@ -1,6 +1,8 @@
 ---
 title: "JS Sequence Diagrams"
 # date: 2015-03-04T21:57:45+08:00
+date: 2000-01-04T00:00:00+09:00
+lastmod: 2000-01-04T00:00:00+09:00
 draft: false
 
 hiddenFromHomePage: true

@@ -2,6 +2,8 @@
 title: "Syntax Highlighting"
 # date: 2011-08-30T16:01:23+08:00
 # lastmod: 2018-11-05T16:01:23+08:00
+date: 2000-01-02T00:00:00+09:00
+lastmod: 2000-01-02T00:00:00+09:00
 draft: false
 
 toc: false

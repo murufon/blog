@@ -2,16 +2,18 @@
 title: "Theme preview"
 # date: 2018-07-10T00:00:00+08:00
 # lastmod: 2018-07-10T00:00:00+08:00
+date: 2000-01-01T00:00:00+09:00
+lastmod: 2000-01-01T00:00:00+09:00
 draft: false
 
-weight: 10
+# weight: 10
 contentCopyright: MIT
 mathjax: true
 autoCollapseToc: true
 
 hiddenFromHomePage: true
 author: "olOwOlo"
-postMetaInFooter: true
+enableGitInfo: false
 
 ---
 

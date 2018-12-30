@@ -210,3 +210,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   fractions = false
   extensions = ["hardLineBreak"]
   hrefTargetBlank = true
+  
+# override default lastmod setting
+[frontmatter]
+  # date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
+  # publishDate = ["publishDate", "date"]
+  # expiryDate = ["expiryDate"]
