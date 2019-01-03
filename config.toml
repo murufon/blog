@@ -1,6 +1,7 @@
 # baseURL = "http://localhost:1313/"
 # baseURL = "https://murufon.github.io/"
-baseURL = "https://blog.kaio.ga/"
+# baseURL = "https://blog.kaio.ga/"
+baseURL = "/"
 # publishDir = "docs"
 languageCode = "ja"
 defaultContentLanguage = "ja"                             # en / zh-cn / ... (This field determines which i18n file to use)
