@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>https://blog.kaio.ga/</loc>
+  <priority>1.0</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/categories/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/about/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2019/01/docker-interactive-command/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/categories/docker/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/laravel-memo/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/categories/laravel/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/neural2/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/categories/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/categories/python3/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/neural1/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/python-contour/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/proxy-server/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/categories/raspberry-pi/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/rpi-mydns-letsencrypt/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/categories/nginx/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/rpi-mydns-setup/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/rpi-raspbian-setup/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/hugo-deploy/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/categories/hugo/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/page/2/</loc>
+  <priority>0.8</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/hugo-customize/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/2018/12/hugo-install/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/demo/js-sequence-diagrams/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/demo/js-flowchart-diagrams/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/demo/syntax-highlighting/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/demo/shortcodes/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/post/demo/even-preview/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/raspberry-pi/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/hugo/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/python3/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/%E8%87%AA%E5%AE%85server/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/neural-network/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/mydns/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/docker/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/dockerfile/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/laravel/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/nginx/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/php/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/letsencrypt/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/proxy/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>https://blog.kaio.ga/tags/%E8%87%AA%E5%AE%85%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</loc>
+  <priority>0.7</priority>
+  <lastmod>2019-01-03T22:08:47+09:00</lastmod>
+  <changefreq>daily</changefreq>
+</url>
+
+</urlset>
