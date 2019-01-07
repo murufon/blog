@@ -2,7 +2,7 @@
 title: "マネジメント用語"
 date: 2019-01-07T20:50:57+09:00
 draft: false
-tags: ["management"]
+tags: ["management","TOC","PERT","PMBOK","ODSC"]
 categories: ["management"]
 ---
 
@@ -45,11 +45,10 @@ Q品質管理、C原価管理、Dスケジュール管理、スコープ管理�
 入力→ツールと実戦技法→出力
 
 ## ODSC
+プロジェクトの目標を明確にするための手法。以下の3つの項目について書き出すことでプロジェクトの最終目標、コンセプト、目指すべきところが明らかになり、タスクを俯瞰しやすくなる、目標を見失いにくくなるといったことに役立つ
 ### O: Objectives
 プロジェクトの目的
 ### D: Deliverables
 プロジェクトの成果物
-### SC Success Criteria
+### SC: Success Criteria
 プロジェクトの成功基準
-
-プロジェクトのODSCを定めることでタスクを俯瞰しやすくなり、目標を見失いにくくなる
