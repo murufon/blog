@@ -12,24 +12,24 @@ categories: ["Git"]
 ## リモートのURLの変更
 
 今のremote origin url
-```
+```bash
 git config remote.origin.url
 ```
 新しいURLにする
-```
+```bash
 git config remote.origin.url <new-repoのURL>
 ```
 
 ## ローカルのmasterブランチを削除する
 ローカルブランチ一覧
-```
+```bash
 git branch
 ```
 ブランチを削除する
-```
+```bash
 git branch --delete master
 ```
 ブランチの名前をmasterにする
-```
+```bash
 git branch -m some-branch master
 ```
