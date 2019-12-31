@@ -2,3 +2,6 @@
 	path = public
 	url = https://github.com/murufon/murufon.github.io.git
 	branch = master
+[submodule "themes/even"]
+	path = themes/even
+	url = https://github.com/murufon/hugo-theme-even.git

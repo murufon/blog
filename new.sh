@@ -12,5 +12,5 @@ else
 fi
 hugo new post/${year}/${month}/${articlename}.md
 
-# open this project wiht Atom
-atom ./ && atom ./content/post/${year}/${month}/${articlename}.md
+# open this project wiht VSCode
+code ./ && code ./content/post/${year}/${month}/${articlename}.md
